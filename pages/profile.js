@@ -1,3 +1,8 @@
+/**
+ * title: 个人中心
+ * Routes:
+ *   - ./PrivateRoute.js
+ */
 import React from "react";
 import router from "umi/router";
 class Profile extends React.Component {

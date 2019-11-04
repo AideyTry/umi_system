@@ -17,9 +17,16 @@ const routes = [
         component: require('../index.js').default,
       },
       {
+        path: '/login',
+        exact: true,
+        component: require('../login.js').default,
+      },
+      {
         path: '/profile',
         exact: true,
         component: require('../profile.js').default,
+        title: '个人中心',
+        Routes: [require('../../PrivateRoute.js').default],
       },
       {
         path: '/user',
